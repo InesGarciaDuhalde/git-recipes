@@ -1,0 +1,24 @@
+.navbar {
+  margin-bottom: 40px;
+  background-color: rgba(237, 237, 237, 0.95);
+}
+
+#alerts {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1100;
+  min-width: 280px;
+}
+
+#add-recipe-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.error-container {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
