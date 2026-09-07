@@ -1,6 +1,6 @@
-# Ejercicio: Git Flow
+# 🍴 Ejercicio: Git Recipes (Git Flow)
 
-## Objetivos
+## 🎯 Objetivos
 
 - Practicar el flujo de trabajo Git Flow en un proyecto existente.
 - Crear y trabajar en ramas paralelas.
@@ -9,7 +9,7 @@
 > Importante: Para realizar este práctico es necesario que tengas instalado
 > un IDE (por ejemplo Visual Studio Code), git y Node.js.
 
-## Set up inicial
+## ⚙️ Set up inicial
 
 1. Realiza un fork del repositorio. A partir de este punto, se trabajará en el repositorio creado en este paso.
 2. En el fork: Clonar el repositorio con 
@@ -29,7 +29,7 @@ npm run dev
 3. Una vez ejecutada la aplicación desde tu navegador, agregá algunas recetas y navegá entre las secciones para familiarizarte con el proyecto.
 
 
-## Parte 1 — Configurar las ramas base
+## 🌿 Parte 1 — Configurar las ramas base
 
 1. Creá la rama `develop` a partir de `main` y realiza push en el repositorio remoto.
 
@@ -39,7 +39,7 @@ git log --oneline --graph
 ```
 
 
-## Parte 2 — Feature 1: Descripción de la receta
+## 📝 Parte 2 — Feature 1: Descripción de la receta
 
 1. Desde `develop`, creá la rama `feature/description`.
 
@@ -50,7 +50,7 @@ git log --oneline --graph
 4. Hacé commit de los cambios y publicá la rama en el repositorio remoto.
 
 
-## Parte 3 — Feature 2: Tiempo de preparación
+## ⏱️ Parte 3 — Feature 2: Tiempo de preparación
 
 > Importante: esta feature se desarrolla en paralelo con la anterior. Creá la rama **desde `develop`**, **no** desde `feature/description`.
 
@@ -63,7 +63,7 @@ git log --oneline --graph
 4. Hacé commit de los cambios y publicá la rama en el repositorio remoto.
 
 
-## Parte 4 — Merge y resolución de conflictos
+## 🤺 Parte 4 — Merge y resolución de conflictos
 
 1. Volvé a `develop` y mergeá `feature/description`.
 
@@ -79,8 +79,7 @@ git add .
 git commit
 ```
 
-
-## Parte 5 — Primer release
+## 🚀 Parte 5 — Primer release
 
 1. Mergeá `develop` en `main` y realizá push.
 
@@ -94,7 +93,7 @@ git push origin v1.0.0
 
 ---
 
-## Referencias y recursos útiles
+## 📖 Referencias y recursos útiles
 
 - [Git](https://git-scm.com/book/es/v2)
 - [TypeScript](https://www.w3schools.com/typescript/)
