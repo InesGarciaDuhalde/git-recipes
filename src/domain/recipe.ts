@@ -1,7 +1,8 @@
 export class Recipe {
   _name!: string;
   _category?: string;
-  _description!: string; 
+  _description!: string;
+  _time?: number;
 
   constructor(aName: string, aDescription: string) {
     this.name = aName;
@@ -19,7 +20,6 @@ export class Recipe {
     }
     this._name = trimmed;
   }
-
   //DESCRIPTION
   get description(): string {
     return this._description;
@@ -41,7 +41,17 @@ export class Recipe {
     this._category = aCategory;
   }
 
+  //TIEMPO:
+  get time(): number | undefined {
+    return this._time;
+  }
+
+  set time(aTime: number | undefined) {
+    this._time = aTime;
+  }
+
   toString(): string {
-    return `Receta: ${this.name} - descripción: ${this.description} - categoría: ${this.category} `;
+    return `Receta: ${this.name} - descripción: ${this.description} - categoría: ${this.category} - tiempo: ${this.time} minutos`;
   }
 }
+
